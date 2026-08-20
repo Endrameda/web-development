@@ -1,3 +1,12 @@
+---
+tags: [ai/prompting]
+status: growing
+---
+
+# Prompt Structure
+
+> Talk to the model like a coworker: set the stage, define the task, specify the rules.
+
 All interactions with Claude starts with prompt, and for these prompts we have to start to talk to the Claude like it's our coworker, explain naturally, concisely, and convertionally.
 
 And the good prompt structure looks like this.

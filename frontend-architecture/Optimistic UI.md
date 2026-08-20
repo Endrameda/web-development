@@ -1,3 +1,12 @@
+---
+tags: [frontend/state, frontend/ux]
+status: growing
+---
+
+# Optimistic UI
+
+> Update the UI the moment the user acts, assume the server will agree, and roll back if it does not.
+
 Optimistic UI is a design and development approach(pattern) where changes made by a user are immediately reflected on the user interface (UI), even before those changes are confirmed by the server. this technique creates a faster and more seamless user experience by assuming the server-side operation will succeeded and updating the UI accordingly.
 
 ### How It works?
@@ -22,3 +31,7 @@ The most knowns are **Social Media Likes.** When a user likes a post, the like c
 In case you are using a **To-Do List App** you've probably noticed that the change will appear when you add or delete a task
 
 In the eCommerce world, **Cart Updates** are an obvious use case. When a user adds an item to their cart, the cart count updates instantly without waiting for server confirmation.
+
+## Sources
+
+- [MDN — Perceived performance](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/Perceived_performance)

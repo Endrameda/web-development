@@ -1,3 +1,12 @@
+---
+tags: [web-platform/networking, frontend/real-time]
+status: growing
+---
+
+# Server-Sent Events
+
+> One-way push, server → client, over a plain HTTP connection. You own the connection lifecycle and the heartbeat.
+
 Here we have an example how we can setup base SSE with js.
 
 We have to keep in mind that we should handle the connections, and usually need set up heartbeat for it. 
@@ -113,3 +122,7 @@ app.get("/api/board/:id/events", async (req, res) => {
   });
 });
 ```
+
+## Sources
+
+- [MDN — EventSource](https://developer.mozilla.org/en-US/docs/Web/API/EventSource)
