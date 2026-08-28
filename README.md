@@ -13,6 +13,7 @@ link.
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
 | [Web Platform](web-platform/0.%20Web%20Platform.md)                            | Browser internals: DOM, event loop, rendering pipeline, HTTP, caching, storage, workers.  |
 | [Frontend Architecture](frontend-architecture/0.%20Frontend%20Architecture.md) | Patterns above the framework: state, data fetching, real-time, rendering, design systems. |
+| [Technologies](technologies/0.%20Technologies.md) | Framework- and tool-specific knowledge: what React (and whatever comes next) does with the concepts. |
 | [System Design](system-design/0.%20System%20Design.md)                         | Design across the client/server boundary: APIs, BFFs, caching layers, queues.             |
 | [Languages & Runtimes](languages/0.%20Languages%20&%20Runtimes.md)             | JS/TS semantics, type-system depth, Node runtime behaviour.                               |
 | [Engineering Practice](engineering-practice/0.%20Engineering%20Practice.md)    | Testing, performance, accessibility, security, CI/CD, observability.                      |
