@@ -9,16 +9,16 @@ link.
 
 ## Start here
 
-| Area | What it covers |
-| --- | --- |
-| [Web Platform](web-platform/0.%20Web%20Platform.md) | Browser internals: DOM, event loop, rendering pipeline, HTTP, caching, storage, workers. |
+| Area                                                                           | What it covers                                                                            |
+| ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| [Web Platform](web-platform/0.%20Web%20Platform.md)                            | Browser internals: DOM, event loop, rendering pipeline, HTTP, caching, storage, workers.  |
 | [Frontend Architecture](frontend-architecture/0.%20Frontend%20Architecture.md) | Patterns above the framework: state, data fetching, real-time, rendering, design systems. |
-| [System Design](system-design/0.%20System%20Design.md) | Design across the client/server boundary: APIs, BFFs, caching layers, queues. |
-| [Languages & Runtimes](languages/0.%20Languages%20&%20Runtimes.md) | JS/TS semantics, type-system depth, Node runtime behaviour. |
-| [Engineering Practice](engineering-practice/0.%20Engineering%20Practice.md) | Testing, performance, accessibility, security, CI/CD, observability. |
-| [CS Fundamentals](cs-fundamentals/0.%20CS%20Fundamentals.md) | Data structures, algorithms, complexity, and the maths underneath. |
-| [AI](ai/0.%20AI.md) | LLM tooling and how it changes the workflow. |
-| [Reading](reading/0.%20Reading.md) | What I'm reading, and the one line I took from it. |
+| [System Design](system-design/0.%20System%20Design.md)                         | Design across the client/server boundary: APIs, BFFs, caching layers, queues.             |
+| [Languages & Runtimes](languages/0.%20Languages%20&%20Runtimes.md)             | JS/TS semantics, type-system depth, Node runtime behaviour.                               |
+| [Engineering Practice](engineering-practice/0.%20Engineering%20Practice.md)    | Testing, performance, accessibility, security, CI/CD, observability.                      |
+| [CS Fundamentals](cs-fundamentals/0.%20CS%20Fundamentals.md)                   | Data structures, algorithms, complexity, and the maths underneath.                        |
+| [AI](ai/0.%20AI.md)                                                            | LLM tooling and how it changes the workflow.                                              |
+| [Reading](reading/0.%20Reading.md)                                             | What I'm reading, and the one line I took from it.                                        |
 
 Each folder's `0. …` note is its index: a table of what's written, what each note answers, and an
 explicit list of the gaps still to fill. That's the entry point — not this file, which stays short

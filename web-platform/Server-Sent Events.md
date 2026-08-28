@@ -14,7 +14,7 @@ We have to keep in mind that we should handle the connections, and usually need 
 On FE it will look like this, in example of react useEffect()
 Can use [EventSource](https://developer.mozilla.org/en-US/docs/Web/API/EventSource)
 
-```TS
+```TSX
 useEffect(() => {
     if (typeof window === "undefined") {
       return;
@@ -111,7 +111,7 @@ app.get("/api/board/:id/events", async (req, res) => {
   mockEventEmitter.on("card-updated", handleCardUpdated);
 
   // heartbeats (keeps proxies happy)
-  const heartbeat = setInterval(() => res.write(`: keep-alive\n\n`), 15_000);
+  const heartbeat = setInterval(() => res.write(":keep-alive\n\n"), 15_000);
 
   // cleanup on disconnect
   req.on("close", () => {
