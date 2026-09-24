@@ -6,7 +6,7 @@ status: seed
 
 # React - useActionState
 
-> One sentence. The answer you came here for, before any explanation.
+> useActionState is React Hook that lets you update state with side effects using actions.
 
 ## When to reach for it
 
@@ -15,5 +15,6 @@ status: seed
 ## Gotchas
 
 ## Sources
+- https://react.dev/reference/react/useActionState
 
 
