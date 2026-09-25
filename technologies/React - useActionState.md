@@ -6,7 +6,7 @@ status: seed
 
 # React - useActionState
 
-> useActionState is React Hook that lets you update state with side effects using actions.
+> A React hook that lets a form action update state directly from the result of an async submission, including its pending status - without manually wiring `useState` + `useTransition` yourself.
 
 ## When to reach for it
 
