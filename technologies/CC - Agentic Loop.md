@@ -9,7 +9,7 @@ status: growing
 > How Claude Code works: prompt → agentic loop → done.
 ## When to reach for it
 
-![](../../source/Pasted%20image%2020260925110043.png)
+![](../source/Pasted%20image%2020260925110043.png)
 ## How it works
 The best explanation is the loop itself.
 
@@ -34,4 +34,4 @@ CC has several permission modes
 - **Auto-accept:** Files are edited without asking, but commands still require approval.
 - **Plan mode:** Uses read-only tools to compile a plan of action before starting any work.
 - **Auto mode:** Claude works without permission prompts while a classifier checks each action in the background, targeted at blocking actions that are irreversible, destructive, or aimed outside your environment. When something is blocked, Claude usually finds a safer approach or asks you for the go-ahead.
-![](../../source/Pasted%20image%2020260925111536.png)
+![](../source/Pasted%20image%2020260925111536.png)
