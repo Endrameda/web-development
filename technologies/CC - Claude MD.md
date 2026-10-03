@@ -1,7 +1,7 @@
 ---
 tags:
   - ai/architecture
-status: seed
+status: growing
 ---
 
 # CC - Claude MD

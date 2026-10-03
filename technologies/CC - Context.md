@@ -7,7 +7,7 @@ status: growing
 
 # 
 
-> Context, what is does, and how it works
+> Context is our window where model can keep all readed data from our project. 
 
 ## When to reach for it
 We are using the Context always whenever we are using the LLM models, in our case the Claude Code.
