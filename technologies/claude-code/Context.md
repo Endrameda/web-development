@@ -5,7 +5,7 @@ tags:
 status: growing
 ---
 
-# 
+# Context
 
 > Context is our window where model can keep all readed data from our project. 
 
@@ -31,7 +31,7 @@ We have a few commands which can help us to control our context.
 
 - `/context` this commands is shows us how much context we are using, for what we are using, and how much we left it. In one works, it checks the state of the context
 - `/clear` this command is clearing our context entirely. We have to use it when we want to clear our context and start everything from scratch. And if we do have some details which Claude have to remember, we have to put them into the `CLAUDE.md` file. So it will not search some important data from the project files
-  ![](../source/Pasted%20image%2020260926134136.png)
+  ![](../../source/Pasted%20image%2020260926134136.png)
 
 - `/compact` as said in [Gotchas](#^d92307) this command can help us to compact our context manually. We have to use this command when we are working on some feature but we hit the limitation of the context window, then we can use `/compact` and we will have some important details in our context and still be able to continue to work on the feature.
 

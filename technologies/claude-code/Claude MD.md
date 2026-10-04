@@ -4,7 +4,7 @@ tags:
 status: growing
 ---
 
-# CC - Claude MD
+# Claude MD
 
 > A markdown file Claude Code reads at the start of every session to get persistent instructions - coding standards, project layout, conventions - so you stop re-explaining the same things every conversation.
 
