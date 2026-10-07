@@ -1,7 +1,7 @@
 ---
 tags:
   - ai/architecture
-status: growing
+status: seed
 ---
 
 # Claude MD
@@ -31,9 +31,9 @@ Files in the directory tree above your working directory load at launch; files i
 
 **Imports:** pull other files in with `@path/to/file` anywhere in the note - `@README`, `@package.json`. Relative paths resolve against the file doing the importing, not your cwd, and imports can nest up to 4 levels deep. Wrap a path in backticks (`` `@README` ``) to mention it without importing it.
 
-**Size:** keep each file under ~200 lines. Longer files cost more context per session and Claude follows them less reliably - split with imports or path-scoped rules (`.claude/rules/*.md`, scoped via `paths:` frontmatter) instead of one giant file.
+**Size:** keep each file under ~200 lines. Longer files cost more context per session and Claude follows them less reliably — split with imports or path-scoped rules (`.claude/rules/*.md`, scoped via `paths:` frontmatter) instead of one giant file. Every line here is competing for the same budget covered in [Context](Context.md)
 
-**Editing it live:** run `/memory` to list and open every memory file (CLAUDE.md, CLAUDE.local.md, auto memory) from inside a session. Or just ask - "add this to CLAUDE.md" works.
+**Editing it live:** run `/memory` to list and open every memory file (CLAUDE.md, CLAUDE.local.md, auto memory) from inside a session. Or just ask - "add this to CLAUDE.md" works. Note that a fresh [subagent](subagents/0.%20Subagents.md) loads this whole hierarchy at startup too, unless its `omitClaudeMd: true`
 
 ## Gotchas
 
