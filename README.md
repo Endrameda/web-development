@@ -70,6 +70,8 @@ cheat sheet never pretends to have an answer it doesn't.
 `#web-platform/networking`. Folders answer "where does this live"; tags answer "what else is like
 this". Use Obsidian's autocomplete rather than typing from memory — that's the only thing stopping
 `#frontend/state` and `#frontend/state-management` from both existing.
+The allowed set lives in [Tag Registry](Tag%20Registry.md); a new tag gets its row there in the same
+commit that first uses it.
 
 **Links.** Standard markdown, relative paths — `[Server-Sent Events](../web-platform/Server-Sent%20Events.md)`.
 Obsidian is configured to emit these (`useMarkdownLinks: true`), so they resolve in the app *and*
@@ -88,6 +90,9 @@ bucket.
 - Capture into `inbox/` during the week. No rules, just get it down.
 - Weekly: drain the inbox, promote what's worth keeping, add the summary line, add the source.
 - A note isn't finished until it links somewhere.
+- Renaming or moving a note: do it inside Obsidian (`alwaysUpdateLinks` fixes inbound links), then fix
+  its row in the folder's `0. …` index by hand. Outside Obsidian, `grep` for inbound links first.
+- Deleting a note: check its backlinks and remove its index row in the same commit.
 - Anything still `seed` after a month gets written properly or deleted. A cheat sheet full of
   empty headings is worse than a small one that's true.
 

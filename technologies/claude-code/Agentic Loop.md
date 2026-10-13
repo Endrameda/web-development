@@ -8,6 +8,7 @@ status: growing
 
 > How Claude Code works: prompt → agentic loop → done.
 ## When to reach for it
+We are reaching to it always when we are using the AI agents(CC)
 
 ![](../../source/Pasted%20image%2020260925110043.png)
 ## How it works
