@@ -24,7 +24,7 @@ practices. It should explain each issue, show the current code, and
 provide an improved version. Make it read-only and have it use Sonnet.
 ```
 
-Claude writes the file with a `name`, a `description`, a `tools` list, a `model`, and a system prompt — you don't write the YAML by hand.
+Claude writes the file with a `name`, a `description`, a `tools` list, a `model`, and a system prompt — you don't write the `md` by hand.
 
 **Step 2 — review the file.** The result looks like this:
 
