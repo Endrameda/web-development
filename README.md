@@ -51,6 +51,15 @@ status: growing
 The blockquote directly under the title is the load-bearing part. Obsidian's hover preview shows
 it without opening the note, so most lookups end there.
 
+**What goes in each section.**
+
+- **Blockquote** — the complete answer, readable alone in the hover preview: "use X when Y, because Z",   not "X is a thing that…". On a `seed` note it says so: "Seed: not understood yet — …".
+- **When to reach for it** — the trigger: the symptom, decision or question that sends me here (2–4  lines). Includes when *not* to use it and what to use instead.
+- **How** — the mechanism in my own words plus one concrete example (code or scenario). If MDN or the  official docs say it better, one line and a link.
+- **Gotchas** — what bites in practice: failure modes, non-obvious behaviour, the trade-off being paid.   Each item says what happens, why, and how to avoid it. No generic pros/cons lists.
+- **Sources** — official docs first, marking what is docs-backed versus my own experience or
+  inference; then links to related notes. `evergreen` needs at least two.
+
 ## Conventions
 
 **Frontmatter — exactly two fields.** `tags` and `status`, nothing more.
