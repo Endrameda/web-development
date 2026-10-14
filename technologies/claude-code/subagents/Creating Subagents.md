@@ -2,7 +2,7 @@
 tags:
   - ai/architecture
   - ai/agents
-status: seed
+status: growing
 ---
 
 # Creating Subagents
