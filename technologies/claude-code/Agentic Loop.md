@@ -10,7 +10,7 @@ status: growing
 ## When to reach for it
 We are reaching to it always when we are using the AI agents(CC)
 
-![](../../source/Pasted%20image%2020260925110043.png)
+![](../../images/Pasted%20image%2020260925110043.png)
 ## How it works
 The best explanation is the loop itself.
 
@@ -25,8 +25,21 @@ In the screenshot above, context can be added into the loop, and the loop itself
 ### Context
 CC has a [**Context Window**](Context.md) that determines how much content conversation, files, commands, outputs, etc.  It can store and reference. After it reaches this limit, CC compacts the conversation, automatically deciding what to remove or summarize, to bring the **Context Window** back down to a usable size.
 
+### Models
+While working with Claude Code you will have access to the multiple models. **Sonnet** handles most coding tasks well. **Opus** Provides stronger reasoning for the complex tasks, architectural decisions. **Haiku** is most fastest and efficient model. 
+
 ### Tools
 Tools are the main thing that make agents work. On their own, AI assistants mostly take in text and return text as a result. Tools let CC determine _when_ to execute code to get closer to completing a task. This could be a file reading tool, a web search tool, or any number of other capabilities. Claude Code uses semantic understanding to determine when to call a tool and how to use the output.
+
+The built-in tools generally fall into five categories, each representing a different kind of agency.
+
+|Category|What Claude can do|
+|---|---|
+|**File operations**|Read files, edit code, create new files, rename and reorganize|
+|**Search**|Find files by pattern, search content with regex, explore codebases|
+|**Execution**|Run shell commands, start servers, run tests, use git|
+|**Web**|Search the web, fetch documentation, look up error messages|
+|**Code intelligence**|See type errors and warnings after edits, jump to definitions, find references (requires [code intelligence plugins](https://code.claude.com/docs/en/plugins/code-intelligence))|
 
 ### Permissions 
 CC has several permission modes
@@ -35,4 +48,4 @@ CC has several permission modes
 - **Auto-accept:** Files are edited without asking, but commands still require approval.
 - **Plan mode:** Uses read-only tools to compile a plan of action before starting any work.
 - **Auto mode:** Claude works without permission prompts while a classifier checks each action in the background, targeted at blocking actions that are irreversible, destructive, or aimed outside your environment. When something is blocked, Claude usually finds a safer approach or asks you for the go-ahead.
-![](../../source/Pasted%20image%2020260925111536.png)
+![](../../images/Pasted%20image%2020260925111536.png)
