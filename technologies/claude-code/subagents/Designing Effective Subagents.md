@@ -50,6 +50,15 @@ You run the project's tests and report failures. Do not fix anything.
 
 Why each line is there: `tools` has no `Edit`/`Write`, so "do not fix anything" is enforced rather than hoped for; `haiku` is my call (running a command and filtering output is not a reasoning-heavy job); step 3 is the output contract that protects the parent's context.
 
+#### Tooling
+Not every subagent need access to every tool. Think about what a subagent actually needs to do, and only give it the tools required for that job. This does two things: it prevents unintended side effects, and it makes each subagent's role clearer when you have several of them.
+
+Here's how to think about tool access for common subagent types:
+
+- **Research / read-only subagent** -- Only needs `Glob`, `Grep`, and `Read`. Cannot accidentally modify files.
+- **Code reviewer** -- Needs `Bash` access to run `git diff` and see what changed, but still doesn't need `Edit` or `Write`.
+- **Styling / code modification agent** -- This is where you give `Edit` and `Write` access, because the subagent's job is to actually change your code.
+
 ## Gotchas
 
 - **A typo'd field silently widens access.** Unrecognized frontmatter fields are ignored (docs), so `tool: Read` instead of `tools: Read` means the agent inherits everything. Validate with `claude plugin validate .claude/agents` and read the file back. The consequence is my inference from that docs rule.
